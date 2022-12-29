@@ -25,6 +25,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
   late List<bool> _cardFlips;
   late List<GlobalKey<FlipCardState>> _cardStateKeys;
 
+
   void startTimer() {
     _timer = Timer.periodic(const Duration(seconds: 1), (t) {
       setState(() {
@@ -102,12 +103,9 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(24),
                   ),
-                  child: const Text(
+                  child:  Text(
                     "Replay",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w500),
+                    style: theme.bodyMedium,
                   ),
                 ),
               ),
