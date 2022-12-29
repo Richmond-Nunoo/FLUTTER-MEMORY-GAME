@@ -12,24 +12,23 @@ class StartGameScreen extends StatefulWidget {
 class _StartGameScreenState extends State<StartGameScreen> {
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context).textTheme;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text(
+        title: const Text(
           "Flutter Memory Game",
-          style: theme.bodyMedium,
         ),
         centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            LottieBuilder.asset("assets/brain_animation.json"),
+            LottieBuilder.asset(
+              "assets/brain_animation.json",
+            ),
             const SizedBox(
-              height: 20,
+              height: 40,
             ),
             ElevatedButton(
               onPressed: () {

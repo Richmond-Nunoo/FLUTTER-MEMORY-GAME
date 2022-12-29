@@ -1,7 +1,7 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 
-List<String> myfillSourceArray() {
+List<String> imageSource() {
   return [
     'assets/images/image_1.jpg',
     'assets/images/image_2.jpg',
@@ -22,26 +22,25 @@ List<String> myfillSourceArray() {
   ];
 }
 
-List myGetSourceArray() {
-  List levelAndKindList = [];
-  List sourceArray = myfillSourceArray();
+List createShuffledListFromImageSource() {
+  List shuffledImages = [];
+  List sourceArray = imageSource();
   for (var element in sourceArray) {
-    levelAndKindList.add(element);
+    shuffledImages.add(element);
   }
-  levelAndKindList.shuffle();
-  return levelAndKindList;
+  shuffledImages.shuffle();
+  return shuffledImages;
 }
 
-List<bool> myGetInitialItemState() {
-  List<bool> initialItemState = <bool>[];
+List<bool> getInitialItemStateList() {
+  List<bool> initialItem = <bool>[];
   for (int i = 0; i < 16; i++) {
-    initialItemState.add(true);
+    initialItem.add(true);
   }
-  return initialItemState;
+  return initialItem;
 }
 
-
-List<GlobalKey<FlipCardState>> myGetCardStateKeys() {
+List<GlobalKey<FlipCardState>> createFlipCardStateKeysList() {
   List<GlobalKey<FlipCardState>> cardStateKeys = <GlobalKey<FlipCardState>>[];
   for (int i = 0; i < 16; i++) {
     cardStateKeys.add(GlobalKey<FlipCardState>());
