@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_memory_game/model/data.dart';
+import 'package:flutter_memory_game/screens/game_over_screen.dart';
 
 class MyFlipCardGame extends StatefulWidget {
   const MyFlipCardGame({super.key});
@@ -12,19 +13,18 @@ class MyFlipCardGame extends StatefulWidget {
 
 class _MyFlipCardGameState extends State<MyFlipCardGame> {
   int _previousIndex = -1;
+  int _time = 3;
+  int _duration = -3;
   bool _flip = false;
   bool _start = false;
   bool _wait = false;
+  late bool _isFinished;
   late Timer _timer;
   late Timer _durationTimer;
-  int _time = 3;
-  int _duration = -3;
   late int _left;
-  late bool _isFinished;
   late List _data;
   late List<bool> _cardFlips;
   late List<GlobalKey<FlipCardState>> _cardStateKeys;
-
 
   void startTimer() {
     _timer = Timer.periodic(const Duration(seconds: 1), (t) {
@@ -89,28 +89,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context).textTheme;
     return _isFinished
-        ? Scaffold(
-            body: Center(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.popUntil(context, (route) => route.isFirst);
-                },
-                child: Container(
-                  height: 50,
-                  width: 200,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(24),
-                  ),
-                  child:  Text(
-                    "Replay",
-                    style: theme.bodyMedium,
-                  ),
-                ),
-              ),
-            ),
-          )
+        ? const GameOverScreen()
         : Scaffold(
             body: SafeArea(
               child: SingleChildScrollView(
