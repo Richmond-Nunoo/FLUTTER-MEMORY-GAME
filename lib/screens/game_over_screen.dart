@@ -2,11 +2,12 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 
 class GameOverScreen extends StatefulWidget {
-  const GameOverScreen({super.key});
+  final int duration;
+  const GameOverScreen({super.key, required this.duration});
 
   @override
   State<GameOverScreen> createState() => _GameOverScreenState();
-}ygd
+}
 
 class _GameOverScreenState extends State<GameOverScreen> {
   bool isConfettiPlaying = true;
@@ -38,10 +39,32 @@ class _GameOverScreenState extends State<GameOverScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Congratulations! You've successfully completed the Flutter memory game. Your sharp memory and quick thinking have helped you emerge victorious. Keep up the good work and keep challenging yourself as you learn Flutter and continue to improve your skills.",
-                  style: theme.bodyMedium,
-                  textAlign: TextAlign.center,
+                RichText(
+                  text: TextSpan(
+                    text: "Under ",
+                    style: theme.bodyLarge,
+                    children: [
+                      TextSpan(
+                          text: "${widget.duration}",
+                          style: theme.displaySmall),
+                      TextSpan(text: "seconds", style: theme.bodySmall),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                RichText(
+                  text: TextSpan(
+                    text: "Congratulations! ",
+                    style: theme.bodyLarge,
+                    children: [
+                      TextSpan(
+                          text:
+                              "You've successfully completed the Flutter memory game. Your sharp memory and quick thinking have helped you emerge victorious. Keep up the good work and keep challenging yourself as you learn Flutter and continue to improve your skills.",
+                          style: theme.bodySmall),
+                    ],
+                  ),
                 ),
                 const SizedBox(
                   height: 20,

@@ -14,7 +14,7 @@ class MyFlipCardGame extends StatefulWidget {
 class _MyFlipCardGameState extends State<MyFlipCardGame> {
   int _previousIndex = -1;
   int _time = 3;
-  int _duration = -3;
+  int duration = -3;
   bool _flip = false;
   bool _start = false;
   bool _wait = false;
@@ -37,7 +37,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
   void startDuration() {
     _durationTimer = Timer.periodic(const Duration(seconds: 1), (t) {
       setState(() {
-        _duration = (_duration + 1);
+        duration = (duration + 1);
       });
     });
   }
@@ -71,9 +71,9 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
 
   @override
   void dispose() {
+    super.dispose();
     _timer.cancel();
     _durationTimer.cancel();
-    super.dispose();
   }
 
   Widget getItem(int index) {
@@ -89,7 +89,9 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context).textTheme;
     return _isFinished
-        ? const GameOverScreen()
+        ? GameOverScreen(
+            duration: duration,
+          )
         : Scaffold(
             body: SafeArea(
               child: SingleChildScrollView(
@@ -106,7 +108,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
                             style: theme.bodyMedium,
                           ),
                           Text(
-                            'Duration: ${_duration}s',
+                            'Duration: ${duration}s',
                             style: theme.bodyMedium,
                           ),
                           Text(
@@ -169,12 +171,13 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
                                       if (_cardFlips.every((t) => t == false)) {
                                         debugPrint("Won");
                                         Future.delayed(
-                                            const Duration(milliseconds: 100),
+                                            const Duration(milliseconds: 160),
                                             () {
                                           setState(() {
                                             _isFinished = true;
                                             _start = false;
                                           });
+                                          _durationTimer.cancel();
                                         });
                                       }
                                     }
