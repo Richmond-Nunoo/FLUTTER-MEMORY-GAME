@@ -3,22 +3,22 @@ import 'package:flutter/cupertino.dart';
 
 List<String> imageSource() {
   return [
-    'assets/images/image_1.jpg',
-    'assets/images/image_2.jpg',
-    'assets/images/image_3.jpg',
-    'assets/images/image_4.jpg',
-    'assets/images/image_5.jpg',
-    'assets/images/image_6.jpg',
-    'assets/images/image_7.jpg',
-    'assets/images/image_8.jpg',
-    'assets/images/image_1.jpg',
-    'assets/images/image_2.jpg',
-    'assets/images/image_3.jpg',
-    'assets/images/image_4.jpg',
-    'assets/images/image_5.jpg',
-    'assets/images/image_6.jpg',
-    'assets/images/image_7.jpg',
-    'assets/images/image_8.jpg',
+    'assets/images/image_1.png',
+    'assets/images/image_2.png',
+    'assets/images/image_3.png',
+    'assets/images/image_4.png',
+    'assets/images/image_5.png',
+    'assets/images/image_6.png',
+    'assets/images/image_7.png',
+    'assets/images/image_8.png',
+    'assets/images/image_1.png',
+    'assets/images/image_2.png',
+    'assets/images/image_3.png',
+    'assets/images/image_4.png',
+    'assets/images/image_5.png',
+    'assets/images/image_6.png',
+    'assets/images/image_7.png',
+    'assets/images/image_8.png',
   ];
 }
 

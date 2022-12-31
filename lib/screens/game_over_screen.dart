@@ -6,7 +6,7 @@ class GameOverScreen extends StatefulWidget {
 
   @override
   State<GameOverScreen> createState() => _GameOverScreenState();
-}
+}ygd
 
 class _GameOverScreenState extends State<GameOverScreen> {
   bool isConfettiPlaying = true;

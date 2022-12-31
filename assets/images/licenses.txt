@@ -1,5 +1,29 @@
-<a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/php" title="php icons">Php icons created by Freepik - Flaticon</a>
-https://docs.flutter.dev/
+apple
+<a target="_blank" href="https://icons8.com/icon/30840/apple-logo">Apple Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+Android#
+<a target="_blank" href="https://icons8.com/icon/P2AnGyiJxMpp/android-os">Android OS</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+Java#
+<a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+visual studio#
+<a target="_blank" href="https://icons8.com/icon/9OGIyU8hrxW5/visual-studio-code-2019">Visual Studio Code 2019</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+firebase#
+<a target="_blank" href="https://icons8.com/icon/62452/firebase">Firebase</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+google #
+<a target="_blank" href="https://icons8.com/icon/17949/google">Google</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+flutter#
+<a target="_blank" href="https://icons8.com/icon/7I3BjCqe9rjG/flutter">Flutter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+dart#
+<a target="_blank" href="https://icons8.com/icon/7AFcZ2zirX6Y/dart">Dart</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+dash#
+https://storage.googleapis.com/cms-storage-bucket/780e0e64d323aad2cdd5.png
+https://flutter.dev/brand
