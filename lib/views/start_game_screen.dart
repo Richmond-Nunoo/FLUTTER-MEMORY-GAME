@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_memory_game/screens/game_screen.dart';
+import 'package:flutter_memory_game/views/game_screen.dart';
 import 'package:lottie/lottie.dart';
 
 class StartGameScreen extends StatefulWidget {

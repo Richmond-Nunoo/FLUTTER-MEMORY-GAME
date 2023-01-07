@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_memory_game/screens/start_game_screen.dart';
+import 'package:flutter_memory_game/views/start_game_screen.dart';
+
 
 void main() {
   runApp(const MyApp());

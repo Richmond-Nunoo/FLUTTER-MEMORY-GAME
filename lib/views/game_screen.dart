@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_memory_game/model/data.dart';
-import 'package:flutter_memory_game/screens/game_over_screen.dart';
+import 'package:flutter_memory_game/views/game_over_screen.dart';
 
 class MyFlipCardGame extends StatefulWidget {
   const MyFlipCardGame({super.key});
@@ -14,7 +14,7 @@ class MyFlipCardGame extends StatefulWidget {
 class _MyFlipCardGameState extends State<MyFlipCardGame> {
   int _previousIndex = -1;
   int _time = 3;
-  int duration = -3;
+  int gameDuration = -3;
   bool _flip = false;
   bool _start = false;
   bool _wait = false;
@@ -37,7 +37,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
   void startDuration() {
     _durationTimer = Timer.periodic(const Duration(seconds: 1), (t) {
       setState(() {
-        duration = (duration + 1);
+        gameDuration = (gameDuration + 1);
       });
     });
   }
@@ -90,7 +90,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
     final theme = Theme.of(context).textTheme;
     return _isFinished
         ? GameOverScreen(
-            duration: duration,
+            duration: gameDuration,
           )
         : Scaffold(
             body: SafeArea(
@@ -108,7 +108,7 @@ class _MyFlipCardGameState extends State<MyFlipCardGame> {
                             style: theme.bodyMedium,
                           ),
                           Text(
-                            'Duration: ${duration}s',
+                            'Duration: ${gameDuration}s',
                             style: theme.bodyMedium,
                           ),
                           Text(
