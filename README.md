@@ -5,14 +5,6 @@ A simple memory card game made with flutter.
 
 ![image1](https://user-images.githubusercontent.com/95882294/211092203-395c25a2-21ad-4415-8a0c-2374f39e8cb0.gif)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 # Prerequisites
 * Android Studio/Vscode/Intellij IDE
@@ -33,3 +25,13 @@ samples, guidance on mobile development, and a full API reference.
 
 # Author
 [Twitter](https://twitter.com/kwame_orsam) Richmond Nunoo
+
+# GETTING STARTED
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
