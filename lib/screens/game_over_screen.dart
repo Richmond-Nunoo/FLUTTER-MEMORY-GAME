@@ -12,7 +12,7 @@ class GameOverScreen extends StatefulWidget {
 class _GameOverScreenState extends State<GameOverScreen> {
   bool isConfettiPlaying = true;
   final _confettiController = ConfettiController(
-    duration: const Duration(seconds: 10),
+    duration: const Duration(seconds: 12),
   );
 
   @override
@@ -55,6 +55,7 @@ class _GameOverScreenState extends State<GameOverScreen> {
                   height: 10,
                 ),
                 RichText(
+                  textAlign: TextAlign.center,
                   text: TextSpan(
                     text: "Congratulations! ",
                     style: theme.bodyLarge,
@@ -62,7 +63,9 @@ class _GameOverScreenState extends State<GameOverScreen> {
                       TextSpan(
                           text:
                               "You've successfully completed the Flutter memory game. Your sharp memory and quick thinking have helped you emerge victorious. Keep up the good work and keep challenging yourself as you learn Flutter and continue to improve your skills.",
-                          style: theme.bodySmall),
+                          style: theme.bodySmall,
+                          
+                          ),
                     ],
                   ),
                 ),
