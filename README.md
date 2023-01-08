@@ -1,17 +1,19 @@
 # flutter_memory_game
 A simple memory card game made with flutter.
 
-## Art
-
-![image1](https://user-images.githubusercontent.com/95882294/211092203-395c25a2-21ad-4415-8a0c-2374f39e8cb0.gif)
-
+## SCREENSHOTS
+<p style="float: center;">
+  <img src="https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME/blob/master/image2.png" width="30%"/>
+  <img src="https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME/blob/master/image1.gif" width="30%"/>
+  <img src="https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME/blob/master/image4.png" width="30%"/>
+</p>
 
 # Prerequisites
 * Android Studio/Vscode/Intellij IDE
 * Flutter SDK
 * Android SDK
 
-# Built With
+# Built With ❤️❤️
 * [Android Studio](https://developer.android.com/studio/install ) How to install Android Studio
 * [Flutter](https://flutter.io) Flutter Official website
 
