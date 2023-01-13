@@ -16,7 +16,7 @@ src="https://img.shields.io/github/followers/Richmond-Nunoo?logo=github&style=fo
 </p>
 
 
-To clone this project,
+## To clone this project,
 open your terminal or cmd
 
 ```
