@@ -1,25 +1,52 @@
 # flutter_memory_game
-A simple memory card game made with flutter.
+A simple flip card memory game made with flutter.
 
-## Art
 
-![image1](https://user-images.githubusercontent.com/95882294/211092203-395c25a2-21ad-4415-8a0c-2374f39e8cb0.gif)
+# Connect
+<p align="left"> <a href="https://twitter.com/kwame_orsam" target="blank"><img src="https://img.shields.io/twitter/follow/kwame_orsam?logo=twitter&style=for-the-badge" alt="kwame_orsam" /> <a href="https://www.github.com/Richmond-Nunoo" target="_blank" rel="noreferrer"><img
+src="https://img.shields.io/github/followers/Richmond-Nunoo?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" />
+  </a> </p>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## SCREENSHOTS
+<p style="float: center;">
+  <img src="https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME/blob/master/image2.png" width="30%"/>
+  <img src="https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME/blob/master/image1.gif" width="30%"/>
+  <img src="https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME/blob/master/image4.png" width="30%"/>
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
+## To clone this project,
+open your terminal or cmd
+
+```
+cd folder/to/clone-into/
+```
+
+```
+git clone https://github.com/Richmond-Nunoo/FLUTTER-MEMORY-GAME.git
+```
+
+Then
+locate the project on your system and open with android studio or Vscode or intellij IDE.
+
+To Run:
+```
+C:\path\to\project> flutter pub get
+
+```
+And then
+
+```
+C:\path\to\project> flutter run
+
+```
 # Prerequisites
 * Android Studio/Vscode/Intellij IDE
 * Flutter SDK
 * Android SDK
 
-# Built With
+# Built With ❤️❤️
 * [Android Studio](https://developer.android.com/studio/install ) How to install Android Studio
 * [Flutter](https://flutter.io) Flutter Official website
 
@@ -33,3 +60,13 @@ samples, guidance on mobile development, and a full API reference.
 
 # Author
 [Twitter](https://twitter.com/kwame_orsam) Richmond Nunoo
+
+# GETTING STARTED
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
